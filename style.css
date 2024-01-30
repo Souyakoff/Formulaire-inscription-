@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    background-size: cover;
+    margin: 20px;
+    color: white;
+}
+
+button {
+}
+
+form {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 120px;
+    background-size: cover;
+    border: 1px solid dimgray;
+    border-radius: 20px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #D60852;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 25px;
+    float: right;
+    margin-right: 10px;
+}
+
+#nom, #prenom {
+    width: 35%;
+}
+
+#observation {
+    padding: 50px;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+input[type="checkbox"]{
+    width: 100%;
+    display: compact;
+    margin-bottom: 30px;
+}
+
+input[type="email"], input[type="tel"] {
+    width: 50%;
+    display: block;
+    padding: 5px;
+    margin-bottom: 30px;
+}
