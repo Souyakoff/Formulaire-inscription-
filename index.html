@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<button type="submit">Ajouter...</button>
+<button type="submit">Exporter les donner</button>
+
+<form>
+    <label>Nom :</label>
+    <input type="text" id="nom" required>
+
+    <label>Prénom :</label>
+    <input type="text" id="prenom" required>
+
+    <br>
+
+    <label>Votre Email :</label>
+    <input type="email" id="email" required>
+
+    <br>
+
+    <label>N°de téléphone :</label>
+    <input type="tel" id="tel" required>
+
+    <label>Formation + niveau souhaité :</label>
+    <input type="text" id="formation" required>
+
+    <label>Voix souhaité :</label>
+    <div>
+        <input type="radio" id="1" name="choixvoix" required>
+        <label for="1">Apprentissage</label>
+
+        <input type="radio" id="2" name="choixvoix" required>
+        <label for="2">Initial</label>
+
+        <input type="radio" id="3" name="choixvoix" required>
+        <label for="3">Ne sait pas encore</label>
+    </div>
+
+    <br>
+
+    <label>Observation :</label>
+    <input type="text" id="observation">
+</form>
+</body>
+</html>
