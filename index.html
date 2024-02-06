@@ -7,10 +7,15 @@
 </head>
 <body>
 
-<button type="submit">Ajouter...</button>
-<button type="submit">Exporter les donner</button>
+    <ul action="traitement.php" method="post">
+        <img class="logo" src="maxresdefault.jpg" ;>
+    </ul>
 
-<form action="traitement.php">
+<form action="traitement.php" method="post">
+
+    <button type="submit">Ajouter...</button>
+    <button type="submit">Exporter les donner</button>
+
     <label>Nom :</label>
     <input type="text" id="nom" name="nom" required>
 
@@ -29,64 +34,26 @@
 
     <label>Formation + niveau souhaité :</label>
     <input type="text" id="formation" name="formation" required>
-
-    <label>Voix souhaité :</label>
+    
     <div>
-        <input type="radio" id="1" name="choixvoix1" required>
+        <label>Voix souhaité :</label>
+        
+        <input type="radio" id="1" name="choixvoix" >
         <label for="1">Apprentissage</label>
-
-        <input type="radio" id="2" name="choixvoix2" required>
+    
+        <input type="radio" id="2" name="choixvoix" >
         <label for="2">Initial</label>
-
-        <input type="radio" id="3" name="choixvoix3" required>
+    
+        <input type="radio" id="3" name="choixvoix" >
         <label for="3">Ne sait pas encore</label>
     </div>
+    
 
     <br>
 
     <label>Observation :</label>
     <input type="text" id="observation" name="observation">
 </form>
-</body>
-</html>
-
-################### Partie Lisa ###################
------ index.html -----
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!-- Formulaire de renseignements -->
-    <form action="traitement.php" method="post">
-        <label for="nom">Entrez nom :</label>
-        <input type="text" name="nom" placeholder="Nom" required>
-        <label for="prenom">Entrez prénom :</label>
-        <input type="text" name="prenom" placeholder="Prenom" required>
-        <label for="email">Entrez email :</label>
-        <input type="text" name="email" placeholder="Email" required>
-        <label for="nutel">Entrez N° téléphone :</label>
-        <input type="text" name="nutel" placeholder="n° téléphone" required>
-        <label for="formationNiveau">Entrez formation + niveau souhaité :</label>
-        <input type="text" name="formationNiveau" placeholder="Formation + niveau souhaité">
-
-        <!-- Voix souhaité -->
-        <label for="choixVoixUn">Apprentissage</label>
-        <input type="radio" name="choixVoixUn" >
-        <label for="choixVoixDeux">Initial</label>
-        <input type="radio" name="choixVoixDeux" >
-        <label for="choixVoixTroix">Ne sais pas</label>
-        <input type="radio" name="choixVoixTroix" >
-        <!-- Fin voix souhaité -->
-
-        <label for="observation">Entrez observation :</label>
-        <input type="text" name="observation" placeholder="Observation :" id="">
-
-        <input type="submit" value="Envoyer">
-    </form>
 </body>
 </html>
 ----- traitement.php -----
