@@ -10,42 +10,42 @@
 <button type="submit">Ajouter...</button>
 <button type="submit">Exporter les donner</button>
 
-<form>
+<form action="traitement.php">
     <label>Nom :</label>
-    <input type="text" id="nom" required>
+    <input type="text" id="nom" name="nom" required>
 
     <label>Prénom :</label>
-    <input type="text" id="prenom" required>
+    <input type="text" id="prenom" name="prenom" required>
 
     <br>
 
     <label>Votre Email :</label>
-    <input type="email" id="email" required>
+    <input type="email" id="email" name="email" required>
 
     <br>
 
     <label>N°de téléphone :</label>
-    <input type="tel" id="tel" required>
+    <input type="tel" id="tel" name="tel" required>
 
     <label>Formation + niveau souhaité :</label>
-    <input type="text" id="formation" required>
+    <input type="text" id="formation" name="formation" required>
 
     <label>Voix souhaité :</label>
     <div>
-        <input type="radio" id="1" name="choixvoix" required>
+        <input type="radio" id="1" name="choixvoix1" required>
         <label for="1">Apprentissage</label>
 
-        <input type="radio" id="2" name="choixvoix" required>
+        <input type="radio" id="2" name="choixvoix2" required>
         <label for="2">Initial</label>
 
-        <input type="radio" id="3" name="choixvoix" required>
+        <input type="radio" id="3" name="choixvoix3" required>
         <label for="3">Ne sait pas encore</label>
     </div>
 
     <br>
 
     <label>Observation :</label>
-    <input type="text" id="observation">
+    <input type="text" id="observation" name="observation">
 </form>
 </body>
 </html>
