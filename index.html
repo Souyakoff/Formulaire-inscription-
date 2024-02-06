@@ -49,3 +49,52 @@
 </form>
 </body>
 </html>
+
+################### Partie Lisa ###################
+----- index.html -----
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Formulaire de renseignements -->
+    <form action="traitement.php" method="post">
+        <label for="nom">Entrez nom :</label>
+        <input type="text" name="nom" placeholder="Nom" required>
+        <label for="prenom">Entrez prénom :</label>
+        <input type="text" name="prenom" placeholder="Prenom" required>
+        <label for="email">Entrez email :</label>
+        <input type="text" name="email" placeholder="Email" required>
+        <label for="nutel">Entrez N° téléphone :</label>
+        <input type="text" name="nutel" placeholder="n° téléphone" required>
+        <label for="formationNiveau">Entrez formation + niveau souhaité :</label>
+        <input type="text" name="formationNiveau" placeholder="Formation + niveau souhaité">
+
+        <!-- Voix souhaité -->
+        <label for="choixVoixUn">Apprentissage</label>
+        <input type="radio" name="choixVoixUn" >
+        <label for="choixVoixDeux">Initial</label>
+        <input type="radio" name="choixVoixDeux" >
+        <label for="choixVoixTroix">Ne sais pas</label>
+        <input type="radio" name="choixVoixTroix" >
+        <!-- Fin voix souhaité -->
+
+        <label for="observation">Entrez observation :</label>
+        <input type="text" name="observation" placeholder="Observation :" id="">
+
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
+----- traitement.php -----
+<?php
+    // Afficher les éléments renseigner
+    var_dump($_POST);
+    // Afficher un seul élément
+    //echo $_POST['nom'];
+    // afficher les informations choisis
+    echo $_POST['nom'] . " " . $_POST['prenom'] . " " . $_POST['nutel'];
+?>
